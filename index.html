@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>For My Birthday Girl 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div id="floating-hearts" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#home">♡ my heart notes</a>
+    <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false">
+      <span aria-hidden="true">♫</span> Play our song
+    </button>
+  </header>
+
+  <!-- Add your own song as music/our-song.mp3 -->
+  <audio id="birthday-song" src="music/our-song.mp3" loop preload="none"></audio>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow"><span class="sparkle">✦</span> A little surprise made just for you <span class="sparkle">✦</span></div>
+      <p class="tiny-label">TO MY FAVOURITE PERSON</p>
+      <h1>Happy Birthday,<br><span class="script">my love</span> <span class="heart-mark">♥</span></h1>
+      <p class="hero-copy">Miles may keep us apart today, but my heart is right there beside you.</p>
+      <div class="countdown-card">
+        <p class="countdown-heading" id="countdown-title">Counting down to your special day</p>
+        <div class="countdown" aria-label="Birthday countdown">
+          <div><strong id="days">--</strong><span>days</span></div>
+          <div><strong id="hours">--</strong><span>hours</span></div>
+          <div><strong id="minutes">--</strong><span>minutes</span></div>
+          <div><strong id="seconds">--</strong><span>seconds</span></div>
+        </div>
+        <p class="date-note">October 21 · your day, your magic ✨</p>
+      </div>
+      <a class="primary-button" href="#cake">Start your surprise <span aria-hidden="true">↓</span></a>
+      <div class="scroll-note">MADE WITH ALL MY LOVE</div>
+    </section>
+
+    <section class="section cake-section" id="cake">
+      <p class="tiny-label">MAKE A WISH, BABY</p>
+      <h2>One little cake, <span class="script">a million wishes</span></h2>
+      <p class="section-copy">Close your eyes, make a wish, and tap the button when you're ready. Imagine I'm right there singing to you. 🎂</p>
+
+      <div class="cake-stage" aria-label="Illustrated birthday cake with candles">
+        <div class="cake-sparkle sparkle-a">✦</div>
+        <div class="cake-sparkle sparkle-b">✧</div>
+        <div class="flames" id="flames">
+          <span class="flame"></span><span class="flame"></span><span class="flame"></span>
+        </div>
+        <div class="candles"><i></i><i></i><i></i></div>
+        <div class="cake-top"></div>
+        <div class="cake-body">
+          <div class="icing-drip drip-one"></div><div class="icing-drip drip-two"></div><div class="icing-drip drip-three"></div>
+          <span class="cake-heart">♥</span>
+          <span class="cake-dot dot-one"></span><span class="cake-dot dot-two"></span><span class="cake-dot dot-three"></span>
+        </div>
+        <div class="cake-plate"></div>
+      </div>
+      <p class="wish-message" id="wish-message" aria-live="polite">Your wish is safe with the universe. 💫</p>
+      <button class="primary-button" id="blow-button" type="button">Blow out the candles ✨</button>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="letter-card">
+        <div class="letter-stamp">FOR YOU, ALWAYS ♡</div>
+        <p class="tiny-label">A LETTER FROM MY HEART</p>
+        <h2>To my <span class="script">birthday girl</span></h2>
+        <div class="letter-text">
+          <p>Happy birthday, my love. 💗</p>
+          <p>I wish I could be beside you today, hold your hand, hug you tight, and see that beautiful smile in person. Even though there's distance between us, you are part of every little thing that makes my days brighter.</p>
+          <p>Thank you for being you—for your smile, your kindness, and the way you make my heart feel at home. I hope this new year brings you peace, happiness, good health, and all the beautiful things you deserve.</p>
+          <p>Until I can celebrate beside you, let this little page be a hug from me to you. No number of miles could make you any less special to me.</p>
+          <p class="letter-signoff">I love you, today and always. <span class="script">Forever yours</span> 💋</p>
+        </div>
+        <button id="secret-button" class="text-button" type="button">P.S. there's one more thing… <span>♡</span></button>
+        <p id="secret-message" class="secret-message" hidden>You are my favourite hello, my hardest goodbye, and my sweetest thought before I fall asleep. I can't wait for the day I get to celebrate you in person. ❤️</p>
+      </div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <p class="tiny-label">OUR LITTLE UNIVERSE</p>
+      <h2>My favourite memories <span class="script">with you</span></h2>
+      <p class="section-copy">Replace these sample cards with your own photos. Every picture holds a little piece of my heart.</p>
+      <div class="memory-grid">
+        <figure class="memory-card memory-one">
+          <img src="photos/photo1.jpg" alt="Our favourite memory" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><small>ADD YOUR PHOTO</small><em>01</em></div>
+          <figcaption>My favourite smile</figcaption>
+        </figure>
+        <figure class="memory-card memory-two">
+          <img src="photos/photo2.jpg" alt="A special moment together" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>✧</span><small>ADD YOUR PHOTO</small><em>02</em></div>
+          <figcaption>Little moments, big feelings</figcaption>
+        </figure>
+        <figure class="memory-card memory-three">
+          <img src="photos/photo3.jpg" alt="A memory we treasure" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♥</span><small>ADD YOUR PHOTO</small><em>03</em></div>
+          <figcaption>My person, always</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="final-section section">
+      <div class="final-heart">♥</div>
+      <p class="tiny-label">ONE LAST THING</p>
+      <h2>Different places.<br><span class="script">One heart.</span></h2>
+      <p class="section-copy">Happy birthday, baby. Today, tomorrow, and every day after—I'm cheering for you, loving you, and wishing I could squeeze you in the biggest hug.</p>
+      <p class="final-signature">Yours, across every mile 💌</p>
+      <a class="text-button back-top" href="#home">Read it all again ↑</a>
+    </section>
+  </main>
+
+  <footer>Made with love, just for you · October 21 ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
